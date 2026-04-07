@@ -1,0 +1,52 @@
+name: flutter_saas_brick
+description: A new brick created with the Mason CLI.
+
+# The following defines the brick repository url.
+repository: https://github.com/raytorresch/flutter_saas_brick.git
+
+# The following defines the version and build number for your brick.
+# A version number is three numbers separated by dots, like 1.2.34
+# followed by an optional build number (separated by a +).
+version: 0.1.0+1
+
+# The following defines the environment for the current brick.
+# It includes the version of mason that the brick requires.
+environment:
+  mason: ">=0.1.0-dev.51 <2.0.0"
+
+# Variables specify dynamic values that your brick depends on.
+# Zero or more variables can be specified for a given brick.
+# Each variable has:
+#  * a type (string, number, boolean, enum, array, or list)
+#  * an optional short description
+#  * an optional default value
+#  * an optional list of default values (array only)
+#  * an optional prompt phrase used when asking for the variable
+#  * a list of values (enums only)
+#  * an optional separator (list only)
+vars:
+  projectName:
+    type: string
+    description: Dart package name (snake_case). Used in pubspec.yaml and all imports.
+    default: my_app
+    prompt: What is the Dart package name? (snake_case, e.g. my_saas_app)
+  projectDescription:
+    type: string
+    description: A description of the project.
+    default: A new Flutter project generated with Mason Brick.
+    prompt: What is the description of the project? Used in pubspec.yaml.
+  appName:
+    type: string
+    description: The name of the app.
+    default: My awesome app
+    prompt: What is the name of the app to display when installed? 
+  bundleId:
+    type: string
+    description: Bundle ID of the app.
+    default: com.awesome.app
+    prompt: What is the bundle identifier of the app?
+  flutterVersion:
+    type: string
+    description: Flutter's version to use.
+    default: "3.41.6"
+    prompt: What version of Flutter do you want to use?

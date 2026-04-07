@@ -1,0 +1,7 @@
+{
+    "projectName": "flutter_saas_brick",
+    "projectDescription": "A Flutter SaaS template brick.",
+    "appName": "My awesome app",
+    "bundleId": "com.awesome.app",
+    "flutterVersion": "3.38.0"
+}

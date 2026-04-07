@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # -------------------------------------------------------------------------
+  # Analyze and test hooks (pure Dart, no Flutter needed)
+  # -------------------------------------------------------------------------
+  hooks:
+    name: Hooks — analyze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Install hook dependencies
+        run: cd hooks && dart pub get
+
+      - name: Analyze hooks
+        run: cd hooks && dart analyze --fatal-infos
+
+  # -------------------------------------------------------------------------
+  # Validate the brick can be bundled (structural check)
+  # -------------------------------------------------------------------------
+  bundle:
+    name: Brick — bundle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Activate mason_cli
+        run: dart pub global activate mason_cli
+
+      - name: Bundle brick
+        run: mason bundle . -t dart -o /tmp
