@@ -10,7 +10,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## [0.1.0+1] — 2026-04-07
 
 ### Added
-- Initial release of `app_template` Mason brick
+- Initial release of `flutter_saas_brick` Mason brick
 - **Routing** — `go_router` with named routes, auth redirect guard, deep linking support, fade transitions, and 404 error screen
 - **Auth state** — `AuthNotifier` (`ChangeNotifier`) with `flutter_secure_storage` backend; session restored on startup
 - **Secure storage** — `SecureStorageService` wrapping `FlutterSecureStorage` (AES on Android, Keychain on iOS)

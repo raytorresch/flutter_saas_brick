@@ -2,7 +2,7 @@
 
 > {{projectDescription}}
 
-Generated with [app_template](https://github.com/raytorresch/app_template) — a production-ready Flutter SaaS brick.
+Generated with [flutter_saas_brick](https://github.com/raytorresch/flutter_saas_brick.git) — a production-ready Flutter SaaS brick.
 
 ---
 

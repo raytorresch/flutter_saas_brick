@@ -1,8 +1,8 @@
-# app_template
+# flutter_saas_brick
 
 [![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://github.com/raytorresch/app_template/actions/workflows/ci.yml/badge.svg)](https://github.com/raytorresch/app_template/actions/workflows/ci.yml)
+[![CI](https://github.com/raytorresch/flutter_saas_brick/actions/workflows/ci.yml/badge.svg)](https://github.com/raytorresch/flutter_saas_brick/actions/workflows/ci.yml)
 
 A production-ready Flutter SaaS project template generated with [Mason](https://github.com/felangel/mason).
 
@@ -49,15 +49,15 @@ my_saas_app/
 ### From brickhub.dev
 
 ```bash
-mason add app_template
-mason make app_template
+mason add flutter_saas_brick
+mason make flutter_saas_brick
 ```
 
 ### From this repository
 
 ```bash
-mason add app_template --git-url https://github.com/raytorresch/app_template
-mason make app_template
+mason add flutter_saas_brick --git-url https://github.com/raytorresch/flutter_saas_brick
+mason make flutter_saas_brick
 ```
 
 ### Locally (for development)
