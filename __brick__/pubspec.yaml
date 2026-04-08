@@ -52,12 +52,13 @@ dependencies:
   package_info_plus: ^9.0.1
   purchases_flutter: ^9.16.0
   shared_preferences: ^2.5.5
+  sqlite3_flutter_libs: ^0.6.0+eol
 
 dev_dependencies:
+  drift_dev: ^2.32.1
+  build_runner: ^2.13.1
   flutter_test:
     sdk: flutter
-
-  build_runner: ^2.13.1
   freezed: ^3.2.5
   injectable_generator: ^2.12.1
   json_serializable: ^6.13.1
